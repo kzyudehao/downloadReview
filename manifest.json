@@ -1,0 +1,19 @@
+{
+	// 清单文件的版本，这个必须写，而且必须是2
+	"manifest_version": 2,
+	// 插件的名称
+	"name": "demo",
+	// 插件的版本
+	"version": "1.0.0",
+	// 插件描述：
+	"description": "以CSV方式导出评论",
+	"permissions": ["activeTab","declarativeContent","storage"],
+	"content_scripts": [
+		{
+			"run_at" : "document_end",
+			"matches":["https://www.amazon.com/product-reviews/B09DG4DLYZ?&currencyCode=CNY"],
+			"js":["downView.js"]
+		}
+	]
+
+}
