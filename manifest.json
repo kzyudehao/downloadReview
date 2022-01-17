@@ -11,7 +11,7 @@
 	"content_scripts": [
 		{
 			"run_at" : "document_end",
-			"matches":["https://www.amazon.com/product-reviews/B09DG4DLYZ?&currencyCode=CNY"],
+			"matches":["https://www.amazon.com/product-reviews/B09DG4DLYZ"],
 			"js":["downView.js"]
 		}
 	]
